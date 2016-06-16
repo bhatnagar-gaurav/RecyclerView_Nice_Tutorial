@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RecyclerMultipleViewType</string>
+    <string name="size_template">Magnitude: %d</string>
+    <string name="avatar">Avatar</string>
+    <string name="row_title_template">Group #%d</string>
+</resources>
