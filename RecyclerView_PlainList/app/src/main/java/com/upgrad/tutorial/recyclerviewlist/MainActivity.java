@@ -1,6 +1,5 @@
 package com.upgrad.tutorial.recyclerviewlist;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 
