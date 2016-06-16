@@ -3,7 +3,7 @@
 In this repositiory we have provided six separate projects to accompany RecyclerView Basic Tutorial.
 Please go through the projects in the sequential manner (as mentioned below) based on the complexity involved :
 
-**1)  RecyclerView_PlainList: **
+**1)  RecyclerView_PlainList:**
     This project is the first step towards shifting to the RecyclerView from the AdapterView family of widgets. It shows a simple dumb plain list of shopping items to be purchased from the retail store. Each row comprises of one shopping item, its word's length and an accompnaying icon (which changes based on the length of each shopping item ).
     
 **2)  RecyclerViewCard-List:**
