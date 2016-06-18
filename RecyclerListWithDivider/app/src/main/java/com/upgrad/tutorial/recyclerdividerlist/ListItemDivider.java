@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * Created by gaurav_bhatnagar on 6/15/2016.
+ // inspired by https://gist.github.com/polbins/e37206fbc444207c0e92
  */
 public class ListItemDivider extends RecyclerView.ItemDecoration {
     private Drawable divider;
