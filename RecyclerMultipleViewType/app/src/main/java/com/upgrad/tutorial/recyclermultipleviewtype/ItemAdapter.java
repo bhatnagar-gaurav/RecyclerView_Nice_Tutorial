@@ -35,6 +35,7 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
     }
 
+    // Returning the length of Extra GroupTitle Rows along with the regular row contents.
     @Override
     public int getItemCount() {
         int count=0;
@@ -47,7 +48,9 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
 
-
+    /* This method returns R.id.group_title or R.id.group_content to identify the two row types.
+       It specifies which row type corresponds to which specific position.
+     */
     @Override
     public int getItemViewType(int position) {
         if (getItem(position) instanceof Integer) {
@@ -60,21 +63,21 @@ public class ItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private Object getItem(int position) {
         int offset=position;
-        int groupContentIndex=0;
+        int groupTitleIndex=0;
 
-        for (String[] groupTitle : activity.shoppingItems) {
+        for (String[] groupContent : activity.shoppingItems) {
             if (offset == 0) {
-                return(Integer.valueOf(groupContentIndex));
+                return(Integer.valueOf(groupTitleIndex));
             }
 
             offset--;
 
-            if (offset < groupTitle.length) {
-                return(groupTitle[offset]);
+            if (offset < groupContent.length) {
+                return(groupContent[offset]);
             }
 
-            offset-=groupTitle.length;
-            groupContentIndex++;
+            offset-=groupContent.length;
+            groupTitleIndex++;
         }
 
         throw new IllegalArgumentException("Invalid position: "
