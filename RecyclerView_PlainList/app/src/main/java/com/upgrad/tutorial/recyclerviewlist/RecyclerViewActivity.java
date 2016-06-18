@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 
 /**
  * Created by gaurav_bhatnagar on 6/15/2016.
+ * This Activity is for all the utility methods of RecyclerView.
  */
 public class RecyclerViewActivity extends Activity {
     private RecyclerView rv=null;
@@ -21,6 +22,8 @@ public class RecyclerViewActivity extends Activity {
         getRecyclerView().setLayoutManager(mgr);
     }
 
+    /*** Main method for initializing the RecyclerView widget and setting it
+         as the layout to be shown to the end user. */
     public RecyclerView getRecyclerView() {
         if (rv==null) {
             rv=new RecyclerView(this);
